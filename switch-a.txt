@@ -1,0 +1,44 @@
+/*
+*Nombre: suma del dos elevado
+*Autor: Richard Ramirez
+*Fecha: 01/03/2017
+*Resumen: Programa que imprime la suma de las potencias de dos.
+*/ 
+#include <stdio.h>
+
+
+int main(){
+   
+   char letra;
+   
+   printf("Ingrese el caracter\n");
+   scanf("%c", &letra);
+   
+   switch(letra){
+       
+       case 'a':
+            
+            printf("Es una vocal minuscula");
+            break;
+        case 'e':
+            
+            printf("Es una vocal minuscula");
+            break;
+        case 'i':
+            
+            printf("Es una vocal minuscula");
+            break;
+        case 'o':
+            
+            printf("Es una vocal minuscula");
+            break;
+        case 'u':
+            
+            printf("Es una vocal minuscula");
+            break;
+        default:
+        printf("no es una vocal");
+        break;
+   }
+   return 0;
+   }
