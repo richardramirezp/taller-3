@@ -1,0 +1,31 @@
+/*NOMBRE: Fibonacci
+*AUTOR: Richard ramirez
+*FECHA:
+*RESUMEN: programa pra calcular el fibonacci e un numero.
+*/
+#include<stdio.h>
+
+int main(){
+
+    int numero, fibonacci, n, x, y, i;
+
+    printf("ingrese el valor del fibonacci a conocer\n");
+    scanf("%d", &numero);
+    x = 0;
+    y = 1;
+
+    for(i = 0;i <= numero; i++){
+        if(i == 0 || i == 1 ){
+            fibonacci = i;
+        }else{
+            fibonacci = x + y;
+            x = y;
+            y = fibonacci;
+        }
+        printf("%d ", fibonacci);
+    }
+
+
+    printf("Fibonacci igual a %d\n", fibonacci);
+    return 0;
+}
